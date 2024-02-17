@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE booking-upload [
+    <!ELEMENT booking-upload (bookings)>
+    <!ATTLIST booking-upload operation (insert|update) "insert">
+    <!ELEMENT bookings (booking+)>
+    <!ELEMENT booking (id?, booking_date, booking_time, location, trainer_user_id, activity_id)>
+    <!ELEMENT id (#PCDATA)>
+    <!ELEMENT booking_date (#PCDATA)>
+    <!ELEMENT booking_time (#PCDATA)>
+    <!ELEMENT location (#PCDATA)>
+    <!ELEMENT trainer_user_id (#PCDATA)>
+    <!ELEMENT activity_id (#PCDATA)>
+]>
+<booking-upload operation="insert">
+    <bookings>
+        <booking>
+            <booking_date>2024-03-21</booking_date>
+            <booking_time>12:00</booking_time>
+            <location>Room 15</location>
+            <trainer_user_id>4</trainer_user_id>
+            <activity_id>6</activity_id>
+        </booking>
+    </bookings>
+</booking-upload>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE activity-upload [
+    <!ELEMENT activity-upload (activities)>
+    <!ATTLIST activity-upload operation (insert|update) "insert">
+    <!ELEMENT activities (activity+)>
+    <!ELEMENT activity (id?, name, level, duration)>
+    <!ELEMENT id (#PCDATA)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT level (#PCDATA)>
+    <!ELEMENT duration (#PCDATA)>
+]>
+<activity-upload operation="insert">
+    <activities>
+        <activity>
+            <name>Flessioni</name>
+            <level>Medium</level>
+            <duration>30mins</duration>
+        </activity>
+        <!-- <activity>
+            <name>ABS</name>
+            <level>Hard</level>
+            <duration>45</duration>
+        </activity>
+        <activity>
+            <name>Zumba</name>
+            <level>Medium</level>
+            <duration>60</duration>
+        </activity>
+        <activity>
+            <name>Pilates</name>
+            <level>Easy</level>
+            <duration>45</duration>
+        </activity>
+        <activity>
+            <name>Crossfit</name>
+            <level>Medium</level>
+            <duration>45</duration>
+        </activity>
+        <activity>
+            <name>Box</name>
+            <level>Easy</level>
+            <duration>30</duration>
+        </activity> -->
+    </activities>
+</activity-upload>
+
+<!--Update v.-->
+<!-- <activity-upload operation="update">
+    <activities>
+        <activity>
+            <id>1</id>
+            <name>Box</name>
+            <level>Box</level>
+            <duration>Box</duration>
+        </activity>
+    </activities>
+</activity-upload> -->
